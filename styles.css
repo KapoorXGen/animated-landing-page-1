@@ -5,3 +5,38 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "PP Neue Montreal", sans-serif;
+  color: aliceblue;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 500;
+  letter-spacing: -0.1rem;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: -0.02rem;
+  line-height: 1.1;
+}
+
+a,
+p {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  overflow: hidden;
+  line-height: 1;
+}
