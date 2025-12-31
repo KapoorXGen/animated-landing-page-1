@@ -59,3 +59,29 @@ p {
   transform: scaleY(0);
   transform-origin: bottom;
 }
+
+.counter {
+  position: fixed;
+  right: 3rem;
+  bottom: 2rem;
+  display: flex;
+  height: 120px;
+  font-size: 120px;
+  line-height: 150px;
+  clip-path: polygon(0 0, 100% 0, 100% 120px, 0 120px);
+}
+
+.digit {
+  position: relative;
+  top: -15px;
+}
+
+.num1offset1 {
+  position: relative;
+  right: -30px;
+}
+
+.num1offset2 {
+  position: relative;
+  right: -15px;
+}
