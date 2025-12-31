@@ -154,4 +154,25 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     "<"
   );
+  t1.to(
+    ".logo",
+    {
+      scale: 1,
+      duration: 1,
+      ease: "power4.inOut",
+    },
+    "<"
+  );
+
+  t1.to(
+    ".line span",
+    {
+      y: "0%",
+      duration: 1,
+      stagger: 0.075,
+      ease: "power4.out",
+      delay: 0.5,
+    },
+    "<"
+  );
 });
