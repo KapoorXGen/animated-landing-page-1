@@ -5,7 +5,7 @@ This project focuses on **high-quality motion design**, **Flip animations**, and
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project demonstrates:
 
@@ -19,7 +19,7 @@ The primary goal of this project is to showcase **frontend animation engineering
 
 ---
 
-## 🧠 What Happens in This Project
+## What Happens in This Project
 
 ### 1. Loader & Initial Animation
 
@@ -47,7 +47,7 @@ The primary goal of this project is to showcase **frontend animation engineering
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **HTML5** – Semantic markup
 - **CSS3** – Layout, styling, responsiveness
@@ -60,7 +60,7 @@ The primary goal of this project is to showcase **frontend animation engineering
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 animated-landing-page-1/
 ├── public/
@@ -76,10 +76,25 @@ animated-landing-page-1/
 
 ---
 
-## ▶️ How to Run the Project Locally
+## How to Run the Project Locally
 
 ### Step 1: Clone the Repository
 
 ```bash
 git clone https://github.com/KapoorXGen/animated-landing-page-1.git
 ```
+### Step 2: Install Dependencies
+
+Make sure Node.js is installed on your system.
+> npm install
+
+### Step 3: Start the Development Server
+
+> npm run dev
+
+## Important Notes
+
+This is an experimental animation demo
+Not intended for production use
+GSAP plugins are used for learning and portfolio demonstration
+Best viewed on desktop for full animation experience
