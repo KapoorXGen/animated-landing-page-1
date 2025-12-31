@@ -98,3 +98,31 @@ function animateImages() {
 
   return mainTimeline;
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  setupTextSplitting();
+  createCounterDigits();
+
+  animateCounter(document.querySelector(".counter-3"), 2.5);
+  animateCounter(document.querySelector(".counter-2"), 3);
+  animateCounter(document.querySelector(".counter-1"), 2, 1.5);
+
+  const t1 = gsap.timeline();
+  gsap.set(".img", { scale: 0 });
+
+  t1.to(".hero-bg", {
+    scaleY: 1,
+    duration: 3,
+    ease: "power2.inOut",
+    delay: 0.25,
+  });
+
+  t1.to(
+    ".img",
+    {
+      scale: 1,
+      stagger: 0.125,
+      ease: "power3.out",
+    },
+    "<"
+  );
