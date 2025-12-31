@@ -126,3 +126,32 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     "<"
   );
+
+  t1.to(".counter", {
+    opacity: 0,
+    duration: 0.3,
+    ease: "power3.out",
+    delay: 0.3,
+    onStart: () => {
+      animateImages();
+    },
+  });
+
+  t1.to(".sidebar .divider", {
+    scaleY: 1,
+    duration: 1,
+    ease: "power3.inOut",
+    delay: 1.25,
+  });
+
+  t1.to(
+    ["nav .divider", ".site-info .divider"],
+    {
+      scaleX: 1,
+      duration: 1,
+      stagger: 0.5,
+      ease: "power3.inOut",
+    },
+    "<"
+  );
+});
