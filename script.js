@@ -62,3 +62,39 @@ function animateCounter(counter, duration, delay = 0) {
     ease: "power2.inOut",
   });
 }
+
+function animateImages() {
+  const images = document.querySelectorAll(".img");
+
+  images.forEach((img) => {
+    img.classList.remove("animate-out");
+  });
+
+  const state = Flip.getState(images);
+
+  images.forEach((img) => {
+    img.classList.add("animate-out");
+  });
+
+  const mainTimeline = gsap.timeline();
+
+  mainTimeline.add(
+    Flip.from(state, {
+      duration: 1,
+      stagger: 0.1,
+      ease: "power3.inOut",
+    })
+  );
+
+  images.forEach((img, i) => {
+    const scaleTimeline = gsap.timeline();
+
+    scaleTimeline
+      .to(img, { scale: 2.5, duration: 0.45, ease: "power3.in" }, 0.025)
+      .to(img, { scale: 1, duration: 0.45, ease: "power3.out" }, 0.5);
+
+    mainTimeline.add(scaleTimeline, i * 0.1);
+  });
+
+  return mainTimeline;
+}
