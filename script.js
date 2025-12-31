@@ -50,3 +50,15 @@ function createCounterDigits() {
     counter3.appendChild(div);
   }
 }
+
+function animateCounter(counter, duration, delay = 0) {
+  const numHeight = counter.querySelector(".num").offsetHeight;
+  const total = (counter.children.length - 1) * numHeight;
+
+  gsap.to(counter, {
+    y: -total,
+    duration,
+    delay,
+    ease: "power2.inOut",
+  });
+}
