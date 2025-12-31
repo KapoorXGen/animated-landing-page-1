@@ -24,3 +24,29 @@ const setupTextSplitting = () => {
     element.dataset.split = "true";
   });
 };
+
+function createCounterDigits() {
+  const counter1 = document.querySelector(".counter-1");
+  ["0", "1"].forEach((num, i) => {
+    const div = document.createElement("div");
+    div.className = i === 1 ? "num num1offset1" : "num";
+    div.textContent = num;
+    counter1.appendChild(div);
+  });
+
+  const counter2 = document.querySelector(".counter-2");
+  for (let i = 0; i <= 10; i++) {
+    const div = document.createElement("div");
+    div.className = i === 1 ? "num num1offset2" : "num";
+    div.textContent = i === 10 ? "0" : i;
+    counter2.appendChild(div);
+  }
+
+  const counter3 = document.querySelector(".counter-3");
+  for (let i = 0; i <= 30; i++) {
+    const div = document.createElement("div");
+    div.className = "num";
+    div.textContent = i % 10;
+    counter3.appendChild(div);
+  }
+}
