@@ -152,3 +152,31 @@ nav .divider {
   transform-origin: left;
   transform: scaleX(0);
 }
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5rem;
+  height: 100svh;
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sidebar .logo {
+  width: 2rem;
+  aspect-ratio: 1;
+  transform: scale(0);
+}
+
+.sidebar .divider {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100svh;
+  transform-origin: top;
+  transform: scaleY(0);
+}
