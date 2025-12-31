@@ -110,3 +110,45 @@ p {
   bottom: 1.5rem;
   right: 1.5rem;
 }
+
+.divider {
+  background-color: aliceblue;
+}
+
+nav {
+  position: relative;
+  width: 100vw;
+  height: 5rem;
+  padding: 1.5rem 1.5rem 1.5rem 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-name a {
+  font-size: 1.5rem;
+}
+
+.nav-items,
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-items {
+  gap: 7.5rem;
+}
+
+.links {
+  gap: 0.5rem;
+}
+
+nav .divider {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  transform-origin: left;
+  transform: scaleX(0);
+}
